@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        background-image: url(440167075_1005741137842523_7457431722363223200_n.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+      }
+      #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 100px;
+  margin-left: 10px;
+  max-width: 300px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.title{
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+.info{
+  font-size: 11px;
+  margin-left: 330px;
+  margin-top: -320px;
+}
+.link{
+    margin-top: 20px;
+    margin-left: 1px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.80;
+
+}
+.text{
+    font-size: 4em;
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    width: 50%;
+    overflow: hidden;
+    animation: typing 2s steps(25),
+     cursor .4s step-end infinite alternate;
+     color: black;
+     font-family: 'Times New Roman';
+}
+
+@keyframes cursor {
+10% { border-color: transparent;}
+}
+
+@keyframes typing {
+   from {width: 0;}
+}
+.contain span{
+ color: black;
+ border: 1px solid transparent;
+ background-image: url(desktop-wallpaper-pure-white-white-plain-thumbnail.jpg);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ mix-blend-mode: multiply;
+ border-radius:5px ;
+ border-style: inset;
+ font-family: 'Times New Roman';
+}
+.about{
+margin-top: -2200px;
+font-size: 30px;
+margin-left: 20px;
+letter-spacing: 0.15rem;
+}
+.info span{
+  color:gold ;
+}
+.info h1{
+  text-decoration: underline overline;
+}
+
+@media only screen and (max-width: 495px) {
+    body {
+      background-image: url(440167075_1005741137842523_7457431722363223200_n.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    #myImg{
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+    .info{
+      margin-left: 20px;
+      margin-top: 100px;
+    }
+    .link{
+      margin-left: 10px;
+      font-size: 10px;
+      width: 90%;
+      margin-top: -400px;
+
+    }
+  }
+    </style>
+    
+    <title>About</title>
+    <head>
+    <body>
+    
+    <div class="title">
+    <h1> &#128100;About</h1>
+    </div>
+
+    <img id="myImg" src="123.jpg" alt="Nathaniel Ferrer">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <div class="info">
+      <h1>About me</h1>
+      <h2><span>Name:</span> Nathaniel DG. Ferrer</h2>
+      <h2><span>Age:</span> 18</h2>
+      <h2><span>Birthday:</span> May 31, 2005, Gemini</h2>
+      <h2><span>Hobbies:</span><br>
+      Drawing, watching; movies and anime,<br> and playing </h2>
+      <br>
+      <h3>Hi, I am Nathaniel Ferrer, and I am reliable, consistent, responsible, active,
+      <br> and hardworking students who are studying in GRC-GLOBAL<br>
+       RECIPROCAL COLLGE. I can be your best partner, your<br> team group, and your friend that will support you.     
+  </h3>
+  </div>
+
+  <div class="link">
+    <div class="contain">
+    <h3 class="text"><span>Nathaniel</span>Ferrer</h3>
+        </div>
+    </div>
+    <script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+    </script>
+    </body>
+    </html>

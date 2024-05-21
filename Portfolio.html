@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(network-mesh-wire-digital-technology-background_1017-27428.avif);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .border{
+            background-color: lightseagreen;
+            border-radius: 5px;
+            padding: 1px;
+            margin-top: -10px;
+            margin-right: -1px;
+            opacity: 0.70;
+        }
+        .name{
+            font-size: 15px;
+            margin-left: 10px;
+            color: white;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  margin-left: 00px;
+  
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+    
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 500px;
+  right: 15px;
+  color: white;
+  font-size: 80px;  
+  cursor: pointer;
+}
+@media only screen and (max-width: 495px) {
+    body {
+      background-image: url(network-mesh-wire-digital-technology-background_1017-27428.avif) ;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    .closebtn {
+  position: absolute;
+  top: 150px;
+  right: 15px;
+  color: black;
+  font-size: 60px;  
+  cursor: pointer;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="border">
+        <div class="name">
+        <h1><i class="bi bi-file-earmark-person"></i></i>Portfolio</h1>
+    </div>
+</div>
+
+<div style="text-align:center">
+    <h2>OWN CREATION WEBSITES</h2>
+    <p>This is my previous work of codes:</p>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="400739754_1468156430584380_5729526589873501843_n.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="website.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="436667516_984511056110122_1399487478246208285_n.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Screenshot (28).png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+
+  <div style="text-align:center">
+    <h2>OWN CREATION PHOTOSHOP</h2>
+    <p>This is my previous work of photoshop:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="442422291_313369191799678_3377317445313564306_n (1).jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="436423695_955775236003393_7043903218030223057_n.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+</body>
+</html>

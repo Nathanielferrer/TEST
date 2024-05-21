@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body{
+            background-image: url(black-white-background_23-2150530990.avif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }   
+        .title{
+            background-color: gainsboro;
+            border-radius: 2px;
+            width: 160px;
+            letter-spacing: 5px;           
+        }
+        .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.80;
+  overflow: hidden;
+  width: 50%;
+  height: 20%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.info{
+    margin-left: 400px;
+    margin-top: -350px;
+}
+.info h2{
+    text-decoration: overline;
+}
+h3{
+    margin-left: 1000px;
+    margin-top: -200px;
+    color: white;
+}
+h3 span{
+    color: gray;
+    text-decoration: underline overline;
+}
+@media only screen and (max-width: 495px) {
+    body {
+      background-image: none;
+    }
+    .info{
+        margin-left: 250px;
+        margin-top: -240px;
+        background-color: white;
+        border-radius: 2px;
+        border: 1px solid gray;
+        font-size: 13px;   
+    }
+    .info h4{
+        margin-right: 10px;
+    }
+    h3{
+        margin-left: 10px;
+        margin-top: 20px;
+        color: black;
+        border: 1px solid gray;
+    }
+    h3 span{
+        color: gray;
+    }
+    .image{
+        width: 100%;
+        margin-left: -5px;
+    }
+    body{
+        background-image: url(12333.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .overlay{
+        width: 100%;
+        height: 30%;
+        margin-left: -5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1> &#129457;Skills </h1>
+    </div>
+    
+    <div class="container">
+        <img src="unnamed.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Nathaniel DG. Ferrer</div>
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>MY SKILLS:</h2>
+        <h4>&#8811; Drawing</h4>
+        <h4>&#8811; Designing Photoshop</h4>
+        <h4>&#8811; Basic HTML, CSS, and BOOTSTRAP</h4>
+        <h4>&#8811; Programming (C#)</h4>
+        <h4>&#8811; M-word and Excel</h4>
+</div>
+<h3><span>MESSAGES</span><br>This is what i had learned throughout the<br>
+year of first year in grc that can make it my own skill and
+      i'm willing to learn more in grc (Global Reciprocal College)</h3>
+</body>
+</html>
